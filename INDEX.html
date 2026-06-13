@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LoveConnect 💖</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <h1>💖 LoveConnect</h1>
+
+  <!-- Room -->
+  <div id="roomBox">
+    <input id="roomInput" placeholder="Enter Secret Room (e.g. LOVE123)">
+    <button onclick="joinRoom()">Join</button>
+  </div>
+
+  <!-- Main App -->
+  <div id="chatApp" style="display:none;">
+
+    <div id="chatBox"></div>
+
+    <input id="msgInput" placeholder="Type message...">
+    <button onclick="sendMsg()">Send</button>
+
+    <hr>
+
+    <input type="file" id="fileInput">
+    <button onclick="sendFile()">Send Photo/Video</button>
+
+    <hr>
+
+    <input id="linkInput" placeholder="Paste link...">
+    <button onclick="sendLink()">Send Link</button>
+
+  </div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
